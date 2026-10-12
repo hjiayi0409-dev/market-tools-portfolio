@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>黃家怡作品集</title>
+<style>
+  :root { --bg:#f5f7fa; --card:#fff; --text:#1f2937; --muted:#6b7280; --accent:#1e4f91; --line:#e5e7eb; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#111418; --card:#1b2027; --text:#e5e7eb; --muted:#9ca3af; --accent:#7aa7e6; --line:#2d333b; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 16px 56px; }
+  h1 { margin:0 0 6px; font-size:28px; }
+  p.hint { margin:0 0 28px; color:var(--muted); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
+  a.card { display:block; background:var(--card); border:1px solid var(--line); border-radius:12px;
+    overflow:hidden; text-decoration:none; color:inherit; transition:transform .15s, box-shadow .15s; }
+  a.card:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,.08); }
+  a.card img { display:block; width:100%; height:auto; border-bottom:1px solid var(--line); background:#fff; }
+  .meta { padding:14px 16px; display:flex; justify-content:space-between; align-items:center; gap:12px; }
+  .meta strong { font-size:17px; }
+  .meta span { color:var(--accent); font-weight:600; white-space:nowrap; }
+</style>
+</head>
+<body>
+<main>
+  <h1>黃家怡作品集</h1>
+  <p class="hint">點下方任一份即可直接閱讀</p>
+  <div class="grid">
+    <a class="card" href="chip.html">
+      <img src="preview/poc.png" alt="籌碼分佈工具說明 第 1 頁">
+      <div class="meta"><strong>1. 籌碼分佈工具</strong><span>點我閱讀 →</span></div>
+    </a>
+    <a class="card" href="margin.html">
+      <img src="preview/margin.png" alt="融資熱度工具說明 第 1 頁">
+      <div class="meta"><strong>2. 融資熱度工具</strong><span>點我閱讀 →</span></div>
+    </a>
+  </div>
+</main>
+</body>
+</html>
